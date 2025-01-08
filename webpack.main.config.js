@@ -8,4 +8,11 @@ module.exports = {
   module: {
     rules: require('./webpack.rules'),
   },
+
+  resolve: {
+    fallback: {
+        "fs": false, 
+        "path": false 
+    }
+}
 };
