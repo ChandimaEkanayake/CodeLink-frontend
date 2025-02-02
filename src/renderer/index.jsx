@@ -10,9 +10,11 @@ root.render(
   <div class="app-wrapper">
     <TopBar />
     <div className="main-container">
-      <div className="demo-tab-left">tab 01</div>
+      <div className="main-tab-left">
+        <VersionExplorerTab />
+      </div>
       <div className="separator"></div>
-      <div className="demo-tab-right">tab 02</div>
+      <div className="main-tab-right">tab 02</div>
     </div>
   </div>
   </>

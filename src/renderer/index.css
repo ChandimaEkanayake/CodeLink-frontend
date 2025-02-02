@@ -52,21 +52,22 @@ html, body {
   background-color: #f4f4f4;
 }
 
-.demo-tab-left {
-  width: 30%;
+.main-tab-left {
+  width: 25%;
   height: 100%;
-  background-color: #d1c4e9; /* Light purple */
+  background-color: #1F2430; /* Light purple */
   flex-grow: 1;
   flex-shrink: 0.5; /* Shrinks slower than right tab */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:0;
 }
 
-.demo-tab-right {
-  width: 70%;
+.main-tab-right {
+  width: 75%;
   height: 100%;
-  background-color: #bbdefb; /* Light blue */
+  background-color: #1F2430; /* Light blue */
   flex-grow: 2;
   flex-shrink: 1; /* Shrinks twice as fast as left tab */
   display: flex;
@@ -76,8 +77,8 @@ html, body {
 
 /* Border between tabs */
 .separator {
-  width: 4px;
+  width: 1px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
