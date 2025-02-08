@@ -1,12 +1,12 @@
 .version-explorer-container {
-    background-color: #1e1e1e;
+    background-color: #1F2430;
     color: #ffffff;
     padding: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     min-width: 250px;
     width:100vw;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
   
   .version-explorer-header {
@@ -32,6 +32,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #ffffff;
     transition: background-color 0.2s ease;
   }

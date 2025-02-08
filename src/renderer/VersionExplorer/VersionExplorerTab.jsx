@@ -1,6 +1,6 @@
 import './VersionExplorer.css';
 import React, { useEffect, useState } from "react";
-import fetchVersionData from '../../data/versionData';
+import fetchVersionData from '../data/versionData.js';
 import CommitCard from "./CommitCard.jsx";
 
 const VersionExplorerTab = () => {
@@ -21,7 +21,6 @@ const VersionExplorerTab = () => {
     <div className="version-explorer-container">
       <div className="version-explorer-header">
         <span>VERSION EXPLORER</span>
-        <button className="close-button">×</button>
       </div>
       {branches.map((branch) => (
         <div key={branch.branch_id} className="branch-container">

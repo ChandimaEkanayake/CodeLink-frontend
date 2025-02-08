@@ -10,7 +10,7 @@ if (started) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    minwidth: 800,
+    minwidth: 1000,
     minheight: 600,
     frame: true,
     frame: false,

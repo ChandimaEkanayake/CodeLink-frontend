@@ -1,0 +1,79 @@
+.changes-tab-top-bar-container {
+    flex-grow: 1; /* Takes up all remaining space */
+    display: flex; /* Ensures content inside it aligns properly */
+    justify-content: flex-start; /* Align content to the right if needed */
+}
+
+.changes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .changes-card {
+    background-color: #2a2b2e;
+    border: 1px solid #3a3b3e;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .feature-section {
+    padding: 16px;
+  }
+  
+  .feature-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .story-id {
+    color: #9ca3af;
+  }
+  
+  .feature-title {
+    color: #ffffff;
+    flex: 1;
+  }
+  
+  .context-section {
+    padding: 16px;
+    color: #e5e7eb;
+    line-height: 1.5;
+  }
+  
+  .code-section {
+    flex: 1;
+  }
+  
+  .code-scroll {
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  .code-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .code-scroll::-webkit-scrollbar-track {
+    background: #1a1b1e;
+  }
+  
+  .code-scroll::-webkit-scrollbar-thumb {
+    background: #4a4b4e;
+    border-radius: 4px;
+  }
+  
+  .code-content {
+    padding: 16px;
+    margin: 0;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e5e7eb;
+    background-color: transparent;
+  }

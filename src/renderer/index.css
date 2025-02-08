@@ -24,6 +24,7 @@ html, body {
   flex-direction: column;
   height: 100vh; /* Take full viewport height */
   width: 100vw; /* Full width */
+  overflow: hidden;
 }
 
 .top-bar {
@@ -62,6 +63,8 @@ html, body {
   justify-content: center;
   align-items: center;
   padding:0;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .main-tab-right {
@@ -71,14 +74,82 @@ html, body {
   flex-grow: 2;
   flex-shrink: 1; /* Shrinks twice as fast as left tab */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  color:white;
+  overflow:hidden;
 }
 
 /* Border between tabs */
 .separator {
-  width: 1px;
+  width: 2px; /* Slightly wider for visibility */
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  background: #1f2430c5;
+  opacity: 0.9;
 }
+
+.separator:hover {
+  opacity: 0.5;
+}
+
+/*Styles for the Changes Tab*/
+
+.main-top-tab {
+  width: 100%;
+  height: 60vh; /* Keeps the desired height */
+  background-color: #1F2430;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.demoFulltabRemoveLater{
+  height:100vh;
+}
+
+.main-top-tab-header {
+  height: 50px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  padding: 0 10px;
+}
+
+.main-top-tab-title {
+  margin-left: 10px;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 9px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 1px solid #333333;
+  margin-top: 1px;
+  flex: 0 1 auto; /* Takes only as much space as needed */
+  margin-right: 10px;
+}
+
+.main-top-tab-content {
+  height: 100%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+
+
